@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walkathon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+   
+	
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" rel="home" href="/">Walkathon!!!!</a>
+    </div>
+
+</div>
+<br><br><br><br>
+<div class="col-sm-6 col-md-3 pull-left">
+        <section class="content">Walkathon</h1>
+          <p class="content__lede">Please enter your information below:</p>
+          <form class="content__form contact-form" id="donor-form">
+            <div class="contact-form__input-group">
+              <input class="contact-form__input contact-form__input--radio" id="salutation-mr" name="salutation" type="radio" value="Mr."/>
+              <label class="contact-form__label contact-form__label--radio" for="salutation-mr">Mr.</label>
+              <input class="contact-form__input contact-form__input--radio" id="salutation-mrs" name="salutation" type="radio" value="Mrs."/>
+              <label class="contact-form__label contact-form__label--radio" for="salutation-mrs">Mrs.</label>
+              <input class="contact-form__input contact-form__input--radio" id="salutation-ms" name="salutation" type="radio" value="Ms."/>
+              <label class="contact-form__label contact-form__label--radio" for="salutation-ms">Ms.</label>
+            </div>
+            <div class="contact-form__input-group">
+              <label class="contact-form__label" for="name">Full Name</label>
+              <input class="contact-form__input contact-form__input--text" id="name" name="name" type="text"/>
+            </div>
+            <div class="contact-form__input-group">
+              <label class="contact-form__label" for="email">Email Address</label>
+              <input class="contact-form__input contact-form__input--email" id="email" name="email" type="email"/>
+            </div>
+            <div class="contact-form__input-group">
+              <label class="contact-form__label" for="amount">Choose amount</label>
+              <select class="contact-form__input contact-form__input--select" id="amount" name="amount">
+                <option>25$</option>
+                <option>50$</option>
+                <option>100$</option>
+                <option>200$</option>
+                <option>500$</option>
+              </select>
+            </div>
+            <div class="contact-form__input-group">
+              <p class="contact-form__label--checkbox-group">Type of Donation</p>
+              <input class="contact-form__input contact-form__input--checkbox" id="single" name="single" type="checkbox" value="single"/>
+              <label class="contact-form__label contact-form__label--checkbox" for="single">Single Amount</label>
+              <input class="contact-form__input contact-form__input--checkbox" id="perlap" name="perlap" type="checkbox" value="perlap"/>
+              <label class="contact-form__label contact-form__label--checkbox" for="perlap">Per Lap</label>
+            </div>
+            <div class="contact-form__input-group">
+                <button class="contact-form__button" style='float: left;' type="submit" id="submit">Donate!</button>
+                <button class="contact-form__button" style='float: right;' type="button" id="clear">Clear</button>
+            </div>
+          </form>
+        </section>
+</div>
+<div class="results col-sm-6 pull-right">
+  <h2 class="results__heading">List of donors</h2>
+  <pre class="results__display-wrapper"><code class="results__display">
+        
+        </code>
+  </pre>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/add_donor.js"></script>
+<script type="text/javascript" src="js/DOMhandler.js"></script>
+</body>
+</html>
