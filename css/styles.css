@@ -34,7 +34,8 @@ h1, h2 {
 .content, .results {
   width: 90vw;
   max-width: 550px;
-  margin: 8vh auto; }
+  margin: 8vh auto;
+  font-family: Lato, sans-serif; }
 
 .content__heading {
   font-size: 125%; }
@@ -49,7 +50,8 @@ h1, h2 {
   padding: 0.5rem 1rem;
   background: #f9fdfe;
   border: 1px solid #cdcfcf;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  font-family: Lato, sans-serif; }
 
 .contact-form {
   position: relative;
@@ -89,7 +91,7 @@ h1, h2 {
       width: auto; }
       .contact-form__input--checkbox ~ .contact-form__input--checkbox, .contact-form__input--radio ~ .contact-form__input--checkbox, .contact-form__input--checkbox ~ .contact-form__input--radio, .contact-form__input--radio ~ .contact-form__input--radio {
         margin-left: 1rem; }
-    .contact-form__input:focus, .contact-form__input:active {
+      .contact-form__input:focus, .contact-form__input:active {
       border-color: #686a69;
       outline: 0; }
   .contact-form__button {
@@ -109,5 +111,12 @@ h1, h2 {
       background: #2a2f2c;
       cursor: pointer;
       outline: 0; }
+
+    /*.row :nth-child(even){
+    background-color: #dcdcdc;
+    }
+    .row :nth-child(odd){
+    background-color: #aaaaaa;
+    }*/
 
 /*# sourceMappingURL=styles.css.map */

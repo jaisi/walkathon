@@ -3,13 +3,14 @@
 var Walkathon = (function(taco) {
     taco.getDonorInfo = function(){
         var form = document.getElementsByClassName('contact-form')[0];
+        var i=0;
         form.addEventListener('submit', function(event){    
           // Stop the form from submitting since we’re handling that with AJAX.
           event.preventDefault();
           // Call our function to get the form data.
           var data = formToJSON(form.elements);
           taco.addDonor(data);
-          console.log("data", data);
+          console.log("data", data,i);
         });
      };
     
